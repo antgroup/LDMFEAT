@@ -1,0 +1,25 @@
+LDMFEAT
+
+This distribution includes modified encoder, attention-layer, transformer,
+and model-loading implementations from LimiX.
+Upstream project: https://github.com/limix-ldm-ai/LimiX
+Copyright 2025 StableAI
+
+Verified source baseline: 76f81eb6ecda88ea3a40e03e098e70104a916ddf (2025-11-20)
+The upstream Apache-2.0 license is preserved in third_party/limix/LICENSE.txt.
+Source mapping and verification details are in third_party/limix/README.md.
+
+FEAT adaptations include changes to sample mixing, positional encoding,
+finite-value handling, preprocessing, inference execution, checkpoint loading,
+and removal of unused helpers. The original upstream project and its
+contributors are acknowledged here.
+
+The RMSNorm implementations in feat/model/mamba_layer.py and
+feat/model/linear_attn_layer.py use the MIT-licensed TorchScale reference.
+Copyright (c) 2022 Microsoft
+Reference revision: 4d1e0e82e5adf86dd424f1463192635b73fc8efc
+The original MIT license and adaptation details are preserved in
+third_party/torchscale/LICENSE and third_party/torchscale/README.md.
+
+PyTorch, Mamba, NumPy, pandas, SciPy, scikit-learn, Matplotlib, einops,
+and other separately installed dependencies retain their own licenses.

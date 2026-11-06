@@ -1,0 +1,62 @@
+# Local credentials and machine configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.ssh/
+.codex/
+.agents/
+
+# OS/editor metadata and caches
+.DS_Store
+__MACOSX/
+._*
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Weights are distributed separately as release assets
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.pkl
+*.pickle
+
+# Local data and generated experiment outputs
+data/
+datasets/
+outputs/
+results/
+logs/
+wandb/
+mlruns/
+*.log
+*.csv
+*.tsv
+*.parquet
+*.npy
+*.npz
+
+# Original archives and local release review files
+*.zip
+*.tar
+*.tar.gz
+.review/
+task_plan.md
+findings.md
+progress.md
+OPEN_SOURCE_REVIEW.md
